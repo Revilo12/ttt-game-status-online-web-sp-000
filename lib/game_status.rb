@@ -58,6 +58,12 @@ def full?(board)
   board.all? {|spot| position_taken?(spot)}
 end
 
+#-------- draw methods --------
+
+def draw?(board)
+  !won?(board) && full(board)
+end
+
 #tests 
 print position_taken?(" ")
 print position_taken?("X")
