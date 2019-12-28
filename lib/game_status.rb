@@ -64,6 +64,12 @@ def draw?(board)
   !won?(board) && full?(board)
 end
 
+#-------- over? methods --------
+
+def over?(board)
+  draw?(board) || won?(board) || full?(board)
+end
+
 #tests 
 print position_taken?(" ")
 print position_taken?("X")
