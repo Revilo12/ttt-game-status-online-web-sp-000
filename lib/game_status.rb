@@ -35,7 +35,6 @@ def any_winning_combination(board)
 end
 
 #Checks winning_combo? for all characters
-#CHECKED
 def any_char_combo?(combination, board)
   CHARACTER_SET.any? do |character|
     winning_combo?(combination, board, character)
@@ -43,7 +42,6 @@ def any_char_combo?(combination, board)
 end
 
 #Sees if there is a win for a specific combination, board, and character.
-#CHECKED
 def winning_combo?(combination, board, character = "X")
   combination.all? do |index|
     board[index] == character
@@ -59,3 +57,7 @@ end
 def full?(board)
   board.all? {|spot| position_taken?(spot)}
 end
+
+#tests 
+print position_taken?(" ")
+print position_taken?("X")
