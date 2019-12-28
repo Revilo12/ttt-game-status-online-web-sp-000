@@ -17,9 +17,6 @@ WIN_COMBINATIONS = [
   
 CHARACTER_SET = ["X", "O"]
 
-board1 = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
-board2 = ["X", " ", "O", "X", " ", "O", " ", " ", "O"]
-
 # ------- win helper methods --------
 
 #Returns true if the board has a win on it and false if it does not
@@ -81,7 +78,3 @@ def winner(board)
     board[win[0]]
   end
 end
-
-#tests 
-print position_taken?(" ")
-print position_taken?("X")
