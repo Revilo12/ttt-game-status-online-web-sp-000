@@ -78,7 +78,7 @@ def winner(board)
   #Checks to see if it it true
   if win
     #Returns the value for the thing in the board for index won[0]
-    win[0]
+    board[win[0]]
   end
 end
 
