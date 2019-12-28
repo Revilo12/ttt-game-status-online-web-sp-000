@@ -51,7 +51,7 @@ end
 #-------- full methods --------
 
 def position_taken?(spot)
-  spot == " " || spot == "" || spot == nil
+  spot != " " && spot != "" && spot != nil
 end
 
 def full?(board)
