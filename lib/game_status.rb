@@ -70,6 +70,18 @@ def over?(board)
   draw?(board) || won?(board) || full?(board)
 end
 
+#-------- winner methods --------
+
+def winner(board)
+  #Stores the value of won
+  win = won?(board)
+  #Checks to see if it it true
+  if win
+    #Returns the value for the thing in the board for index won[0]
+    win[0]
+  end
+end
+
 #tests 
 print position_taken?(" ")
 print position_taken?("X")
